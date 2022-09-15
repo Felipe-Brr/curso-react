@@ -1,17 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
-
+import SayMyname from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 function App() {
-
-  const name = "Felipe";
-
-  const newName = name.toLocaleUpperCase();
   return (
     <div className="App">
-      <h1>Teste JSX</h1>
-      <p>meu nome é {newName}</p>
       <HelloWorld/>
+      <SayMyname nome="Felipe"/>
+      <Pessoa 
+      nome="Rodrigo" 
+      idade="31" 
+      profissao="Programador" 
+      foto="https://via.placeholder.com/150"/>
     </div>
   );
 }
